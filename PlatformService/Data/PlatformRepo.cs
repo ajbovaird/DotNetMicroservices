@@ -26,7 +26,9 @@ public class PlatformRepo : IPlatformRepo
 
     public Platform GetPlatformById(int id)
     {
-        return _dbContext.Platforms.FirstOrDefault(x => x.Id == id, new Platform());
+        return _dbContext
+            .Platforms
+            .FirstOrDefault(x => x.Id == id) ?? new Platform();
     }
 
     public bool SaveChanges()
