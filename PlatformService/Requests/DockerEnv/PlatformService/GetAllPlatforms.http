@@ -1,0 +1,7 @@
+@host=http://localhost:8080/api
+
+GET {{host}}/platforms
+Content-Type: application/json
+
+{
+}
