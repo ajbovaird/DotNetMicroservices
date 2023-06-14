@@ -19,6 +19,8 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+Console.WriteLine($"--> CommandService Endpoint {builder.Configuration["CommandService"]}");
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -27,7 +29,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
@@ -36,5 +38,3 @@ app.MapControllers();
 PrepDb.PrepPopulation(app);
 
 app.Run();
-
-https://youtu.be/DgVjEo3OGBI?t=15028

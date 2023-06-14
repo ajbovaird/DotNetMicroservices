@@ -1,0 +1,10 @@
+@host=http://localhost:30325/api
+
+POST {{host}}/platforms
+Content-Type: application/json
+
+{
+    "name":"Docker",
+    "publisher":"Docker",
+    "cost":"Free"
+}
