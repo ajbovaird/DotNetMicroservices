@@ -1,0 +1,7 @@
+@host=http://acme.com/api
+
+GET {{host}}/platforms
+Content-Type: application/json
+
+{
+}

@@ -1,0 +1,10 @@
+@host=http://acme.com/api
+
+POST {{host}}/platforms
+Content-Type: application/json
+
+{
+    "name":"Docker",
+    "publisher":"Docker",
+    "cost":"Free"
+}
