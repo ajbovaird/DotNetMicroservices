@@ -1,0 +1,9 @@
+@host=http://localhost:5180/api/c
+
+POST {{host}}/platforms/1/commands
+Content-Type: application/json
+
+{
+    "HowTo":"Build a .net project",
+    "CommandLine":"dotnet build"
+}

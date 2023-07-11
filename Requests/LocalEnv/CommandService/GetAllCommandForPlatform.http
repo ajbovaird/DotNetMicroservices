@@ -1,0 +1,7 @@
+@host=http://localhost:5180/api/c
+
+GET {{host}}/platforms/1/commands/1
+Content-Type: application/json
+
+{
+}
