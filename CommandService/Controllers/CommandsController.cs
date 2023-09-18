@@ -76,6 +76,5 @@ public class CommandsController : ControllerBase
             new { platformId = platformId, commandId = commandReadDto.Id },
             commandReadDto
         );
-
     }
 }
